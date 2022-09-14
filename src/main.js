@@ -1,5 +1,15 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.css'
+import router from './router'
+// import './index.css'
 
-createApp(App).mount('#app')
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min'
+
+// createApp(App).mount('#app')
+
+const app = createApp(App)
+app.use(router)
+// #app element yang memakai id app
+app.mount('#app')
